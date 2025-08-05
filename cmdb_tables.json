@@ -1,0 +1,2316 @@
+{
+  "version": "Yokohama",
+  "description": "List of tables in the CMDB in a base system with its name, label, and a description of the type of information that is stored in the table.",
+  "tables": [
+    {
+      "name": "cmdb_ci",
+      "label": "Configuration Item",
+      "description": "Base configuration item (CI) table."
+    },
+    {
+    "name": "cmdb_ci_computer",
+    "label": "Computer",
+    "description": "An extension of the Hardware table, capturing computer properties."
+    },
+    {
+    "name": "cmdb_ci_business_app",
+    "label": "Business Application",
+    "description": "Represents a business-level application in the CMDB, used for portfolio and capability mapping. Not intended for operational monitoring."
+    },
+    {
+      "name": "cmdb_ci_acc",
+      "label": "Accessory",
+      "description": "Accessories for phones, computers, and so on."
+    },
+    {
+      "name": "cmdb_ci_ad_controller",
+      "label": "Active Directory Domain Controller",
+      "description": "Microsoft Active Directory domain controller."
+    },
+    {
+      "name": "cmdb_ci_ad_domain",
+      "label": "AD Domain",
+      "description": "Microsoft Active Directory domain."
+    },
+    {
+      "name": "cmdb_ci_aix_server",
+      "label": "AIX Server",
+      "description": "Server running the AIX operating system."
+    },
+    {
+      "name": "cmdb_ci_alias",
+      "label": "Alias",
+      "description": "Pseudonym for data locations, virtual email addresses, pointers, and so\n on."
+    },
+    {
+      "name": "cmdb_ci_apache_web_server",
+      "label": "Apache Web Server",
+      "description": "Server hosting Apache web server software."
+    },
+    {
+      "name": "cmdb_ci_appl",
+      "label": "Application",
+      "description": "Application, which is a collection of files and data that deliver a service and\n manage business processes."
+    },
+    {
+      "name": "cmdb_ci_appl_now_app",
+      "label": "ServiceNow Application",
+      "description": "CIs that Event Management generates for various components such as Impact calculator, which is used to bind alerts that are later shown in maps. Used internally by self-health when monitoring internal health checks for key components\n such as connector instance status and MID Server status.  Parent class for all ServiceNow applications."
+    },
+    {
+      "name": "cmdb_ci_application_cluster",
+      "label": "Application Cluster",
+      "description": "Logical group of servers with clustering software installed on each of the\n servers in the group so that the group acts like a single system."
+    },
+    {
+      "name": "cmdb_ci_application_server_resource",
+      "label": "Application Server Resource",
+      "description": "Parent class for application servers such as Coldfusion application\n server."
+    },
+    {
+      "name": "cmdb_ci_app_server",
+      "label": "Application Server",
+      "description": "A base table for logical CIs, which indicate the primary function of a physical\n or virtual server such as a Tomcat server or a WebSphere server."
+    },
+    {
+      "name": "cmdb_ci_app_server_composer",
+      "label": "Composer",
+      "description": "Server hosting IBM WebSphere Multichannel Bank Transformation Toolkit."
+    },
+    {
+      "name": "cmdb_ci_app_server_datapower",
+      "label": "Data Power",
+      "description": "Server hosting IBM DataPower Gateway Secure software."
+    },
+    {
+      "name": "cmdb_ci_app_server_domino",
+      "label": "Domino",
+      "description": "Server hosting IBM Domino software."
+    },
+    {
+      "name": "cmdb_ci_app_server_hp_ucmdb",
+      "label": "HP uCMDB",
+      "description": "Server hosting HP uCMDB software."
+    },
+    {
+      "name": "cmdb_ci_app_server_java",
+      "label": "JavaServer",
+      "description": "Server hosting Java applications."
+    },
+    {
+      "name": "cmdb_ci_app_server_jb_module",
+      "label": "delivery Controler",
+      "description": "Server hosting an inner module of JBoss application (deployed application)."
+    },
+    {
+      "name": "cmdb_ci_app_server_jboss",
+      "label": "JBoss",
+      "description": "Server hosting a JBoss Application Server (JBoss AS), which is a cross-platform Java application server, open-source developed by the JBoss software company."
+    },
+    {
+      "name": "cmdb_ci_app_server_jrun",
+      "label": "Jrun",
+      "description": "Server hosting JRun applications."
+    },
+    {
+      "name": "cmdb_ci_app_server_jrun_war",
+      "label": "Jrun WAR",
+      "description": "Server hosting the inner module of a JRun application (deployed application)."
+    },
+    {
+      "name": "cmdb_ci_app_server_ora_ess",
+      "label": "Oracle Essbase Server",
+      "description": "Server hosting Oracle Essbase software."
+    },
+    {
+      "name": "cmdb_ci_app_server_ora_ias",
+      "label": "Oracle iAS",
+      "description": "Server hosting Oracle internet Application Server."
+    },
+    {
+      "name": "cmdb_ci_app_server_ora_ias_m",
+      "label": "Oracle iAS Web module",
+      "description": "Server hosting the inner module of the Oracle iAS application (deployed application)."
+    },
+    {
+      "name": "cmdb_ci_app_server_remedy",
+      "label": "Remedy HSServer",
+      "description": "Server hosting Remedy HSSServer application."
+    },
+    {
+      "name": "cmdb_ci_app_server_tomcat",
+      "label": "Tomcat",
+      "description": "Server hosting Apache Tomcat software."
+    },
+    {
+      "name": "cmdb_ci_app_server_tomcat_war",
+      "label": "Tomcat WAR",
+      "description": "Server hosting inner module of Apache Tomcat application (deployed\n application)."
+    },
+    {
+      "name": "cmdb_ci_app_server_vendavo",
+      "label": "Vendavo Application Server",
+      "description": "Server hosting Vendavo Application Server software."
+    },
+    {
+      "name": "cmdb_ci_app_server_weblogic",
+      "label": "BEA Weblogic",
+      "description": "Server hosting Oracle WebLogic Server."
+    },
+    {
+      "name": "cmdb_ci_app_server_webseal",
+      "label": "Webseal",
+      "description": "Server hosting IBM Tivoli Access Manager solution."
+    },
+    {
+      "name": "cmdb_ci_app_server_websphere",
+      "label": "IBM Websphere",
+      "description": "Server hosting IBM WebSphere software."
+    },
+    {
+      "name": "cmdb_ci_app_server_wl_module",
+      "label": "WeblogicModule",
+      "description": "Server hosting inner module of WebLogic."
+    },
+    {
+      "name": "cmdb_ci_app_server_ws_ear",
+      "label": "Websphere EAR",
+      "description": "Server hosting inner module of IBM WebSphere software."
+    },
+    {
+      "name": "cmdb_ci_app_server_ws_odr",
+      "label": "Websphere ODR LB",
+      "description": "Server hosting WebSphere ODR LB application."
+    },
+    {
+      "name": "cmdb_ci_appl_active_directory",
+      "label": "Active Directory Service",
+      "description": "Inner software module of AD Domain application."
+    },
+    {
+      "name": "cmdb_ci_appl_biztalk",
+      "label": "BizTalk",
+      "description": "Microsoft BizTalk Server software."
+    },
+    {
+      "name": "cmdb_ci_appl_biztalk_orch",
+      "label": "BizTalk Orchestration",
+      "description": "Inner module of Microsoft Biztalk Server software."
+    },
+    {
+      "name": "cmdb_ci_appl_ca",
+      "label": "CA Enterprise Communicator",
+      "description": "CA Enterprise Communicator software."
+    },
+    {
+      "name": "cmdb_ci_appl_ca_dir_server",
+      "label": "CA eTrust Directory Server",
+      "description": "CA eTrust Directory Server software."
+    },
+    {
+      "name": "cmdb_ci_appl_ca_ent_man",
+      "label": "CA Introscope Enterprise Manager",
+      "description": "CA introscope Enterprise Manager software."
+    },
+    {
+      "name": "cmdb_ci_appl_ca_id_man",
+      "label": "CA Identity Manager Provisioning Server",
+      "description": "CA Identity Manager Server software."
+    },
+    {
+      "name": "cmdb_ci_appl_cisco_call_man",
+      "label": "Cisco CallManager",
+      "description": "Cisco CallManager (Cisco Unified Communications Manager) software."
+    },
+    {
+      "name": "cmdb_ci_appl_cisco_fibre",
+      "label": "Cisco Fibre InterConnect",
+      "description": "Cisco Fibre InterConnect software."
+    },
+    {
+      "name": "cmdb_ci_appl_citrix_app",
+      "label": "Citrix Application Icon",
+      "description": "Inner module of Citrix software."
+    },
+    {
+      "name": "cmdb_ci_appl_citrix_collector",
+      "label": "Citrix Collector",
+      "description": "Citrix Collector software."
+    },
+    {
+      "name": "cmdb_ci_appl_citrix_xenapp",
+      "label": "Citrix XenAPP or Presentation Server",
+      "description": "Citrix XenApp software."
+    },
+    {
+      "name": "cmdb_ci_appl_connectit",
+      "label": "Connect-It Service",
+      "description": "Connect-It software."
+    },
+    {
+      "name": "cmdb_ci_appl_controlm",
+      "label": "Control-M",
+      "description": "Control-M software."
+    },
+    {
+      "name": "cmdb_ci_appl_delivery_controler",
+      "label": "Delivery Controler",
+      "description": "Application delivery controller software."
+    },
+    {
+      "name": "cmdb_ci_appl_doc_brava_proc",
+      "label": "Documentum Brava Job Processor",
+      "description": "Brava (EMC Documentum) job processor software."
+    },
+    {
+      "name": "cmdb_ci_appl_doc_brava_server",
+      "label": "Documentum Brava License Server",
+      "description": "Brava (EMC Documentum) License Server software."
+    },
+    {
+      "name": "cmdb_ci_appl_doc_docbase",
+      "label": "Documentum DocBase",
+      "description": "Documentum Docbase software."
+    },
+    {
+      "name": "cmdb_ci_appl_doc_docbroker",
+      "label": "Documentum Broker",
+      "description": "Documentum Docbase broker software."
+    },
+    {
+      "name": "cmdb_ci_appl_dot_net",
+      "label": ".NET Application",
+      "description": "Microsoft .NET application software."
+    },
+    {
+      "name": "cmdb_ci_appl_fastsearch",
+      "label": "Fast Search",
+      "description": "Microsoft FAST Search software (for the SharePoint collaboration\n platform)."
+    },
+    {
+      "name": "cmdb_ci_appl_generic",
+      "label": "Generic Application",
+      "description": "Generic application, which is identified by the system when there is an\n endpoint with an open port in listen mode and there is no pattern for it."
+    },
+    {
+      "name": "cmdb_ci_appl_glassfish",
+      "label": "GlassFish",
+      "description": "Oracle GlassFish Server software."
+    },
+    {
+      "name": "cmdb_ci_appl_glassfish_war",
+      "label": "GlassFish WAR",
+      "description": "Inner module of GlassFish application (deployed application)."
+    },
+    {
+      "name": "cmdb_ci_appl_groundwork",
+      "label": "Groundwork",
+      "description": "Groundwork (open source) monitoring software."
+    },
+    {
+      "name": "cmdb_ci_appl_hp_index",
+      "label": "HP SM Index Server",
+      "description": "HP Service Manager Index Server software."
+    },
+    {
+      "name": "cmdb_ci_appl_hp_operations",
+      "label": "HP Operations Manager",
+      "description": "HP Operations Manager software."
+    },
+    {
+      "name": "cmdb_ci_appl_hp_qc",
+      "label": "HP Quality Center",
+      "description": "HP Quality Center software."
+    },
+    {
+      "name": "cmdb_ci_appl_hp_service",
+      "label": "HP Service Manager",
+      "description": "HP Service Manager software."
+    },
+    {
+      "name": "cmdb_ci_appl_hp_sm_kb",
+      "label": "HP SM KnowledgeBase",
+      "description": "HP Service Manager KnowledgeBase software."
+    },
+    {
+      "name": "cmdb_ci_appl_ibm_cics",
+      "label": "IBM CICS",
+      "description": "IBM CICS Transaction Server software."
+    },
+    {
+      "name": "cmdb_ci_appl_ibm_ctg",
+      "label": "IBM CTG",
+      "description": "IBM CICS Transaction Gateway software."
+    },
+    {
+      "name": "cmdb_ci_appl_ibm_wmb",
+      "label": "IBM WebSphere Message Broker",
+      "description": "IBM WebSphere Message Broker software."
+    },
+    {
+      "name": "cmdb_ci_appl_ibm_wmb_listener",
+      "label": "IBM WMB Http Listener",
+      "description": "IBM WebSphere HTTP Listener software."
+    },
+    {
+      "name": "cmdb_ci_appl_ibm_wmq",
+      "label": "IBM MQ Manager (Formerly IBM WebSphere MQ)",
+      "description": "IBM MQ software."
+    },
+    {
+      "name": "cmdb_ci_appl_ibm_wmq_queue",
+      "label": "IBM MQ Queue (Formerly IBM WebSphere MQ Queue)",
+      "description": "Inner module of IBM MQ software."
+    },
+    {
+      "name": "cmdb_ci_appl_itam",
+      "label": "ITAM Asset Center",
+      "description": "HP Asset Center software."
+    },
+    {
+      "name": "cmdb_ci_appl_mongo_config_serv",
+      "label": "Mongo Config Server",
+      "description": "Mongo Configuration Server software."
+    },
+    {
+      "name": "cmdb_ci_appl_mongos",
+      "label": "Mongos Server",
+      "description": "MongoDB server software."
+    },
+    {
+      "name": "cmdb_ci_appl_ms_dynamic_crm",
+      "label": "Dynamic CRM Component",
+      "description": "Microsoft Dynamic CRM software."
+    },
+    {
+      "name": "cmdb_ci_appl_msmq",
+      "label": "MSMQ",
+      "description": "Microsoft Message Queuing (MSMQ) software."
+    },
+    {
+      "name": "cmdb_ci_appl_ora_conc",
+      "label": "Oracle Concurrent Server",
+      "description": "Oracle Concurrent Server software."
+    },
+    {
+      "name": "cmdb_ci_appl_ora_disc",
+      "label": "Oracle Discoverer Engine",
+      "description": "Oracle Discoverer software."
+    },
+    {
+      "name": "cmdb_ci_appl_ora_disc_ui",
+      "label": "Oracle Discoverer UI",
+      "description": "Oracle Discoverer UI module software."
+    },
+    {
+      "name": "cmdb_ci_appl_ora_ebs",
+      "label": "Oracle ESB",
+      "description": "Oracle Enterprise Service Bus software."
+    },
+    {
+      "name": "cmdb_ci_appl_ora_forms",
+      "label": "Oracle Forms Engine",
+      "description": "Oracle Forms software."
+    },
+    {
+      "name": "cmdb_ci_appl_ora_forms_ui",
+      "label": "Oracle Forms UI",
+      "description": "Oracle Forms UI software."
+    },
+    {
+      "name": "cmdb_ci_appl_ora_fs",
+      "label": "Oracle Fulfillment Server",
+      "description": "Oracle Fulfillment Server software."
+    },
+    {
+      "name": "cmdb_ci_appl_ora_http",
+      "label": "Oracle HTTP Server",
+      "description": "Oracle HTTP Server software (web tier of Oracle Fusion middleware)."
+    },
+    {
+      "name": "cmdb_ci_appl_ora_jms_queue",
+      "label": "Oracle Weblogic JMS Queue",
+      "description": "Oracle WebLogic JMS software."
+    },
+    {
+      "name": "cmdb_ci_appl_ora_metric_client",
+      "label": "Oracle Metric Client",
+      "description": "Oracle Metric client software."
+    },
+    {
+      "name": "cmdb_ci_appl_ora_metric_svr",
+      "label": "Oracle Metric Server",
+      "description": "Oracle Metric server software."
+    },
+    {
+      "name": "cmdb_ci_appl_ora_notif_svr",
+      "label": "Oracle Notification Server",
+      "description": "Oracle Notification Server (ONS) software."
+    },
+    {
+      "name": "cmdb_ci_appl_ora_oacore",
+      "label": "Oracle OACORE Server",
+      "description": "Oracle OACORE server software."
+    },
+    {
+      "name": "cmdb_ci_appl_ora_oafm",
+      "label": "Oracle OAFM Server",
+      "description": "Oracle OAFM server software."
+    },
+    {
+      "name": "cmdb_ci_appl_ora_pm",
+      "label": "Oracle Process Manager",
+      "description": "Oracle BPEL Process Manager server software."
+    },
+    {
+      "name": "cmdb_ci_appl_ora_queue",
+      "label": "Advanced Queue Queue",
+      "description": "Oracle Advanced Queuing software."
+    },
+    {
+      "name": "cmdb_ci_appl_ora_report",
+      "label": "Oracle Report Server",
+      "description": "The Oracle Report Server software."
+    },
+    {
+      "name": "cmdb_ci_appl_ora_tns",
+      "label": "Oracle App TNS Service",
+      "description": "Oracle Application Express (TNS) listener software."
+    },
+    {
+      "name": "cmdb_ci_appl_ora_tnslsnr",
+      "label": "Oracle TNS Listener Engine",
+      "description": "Oracle Application Express software."
+    },
+    {
+      "name": "cmdb_ci_appl_peoplesoft",
+      "label": "Peoplesoft Application Server",
+      "description": "Peoplesoft Application Server software."
+    },
+    {
+      "name": "cmdb_ci_appl_rabbitmq",
+      "label": "RabbitMQ",
+      "description": "RabbitMQ (open source) software."
+    },
+    {
+      "name": "cmdb_ci_appl_rabbitmq_cluster",
+      "label": "RabbitMQ Cluster",
+      "description": "RabbitMQ Cluster (open source) software."
+    },
+    {
+      "name": "cmdb_ci_appl_sap_ascs",
+      "label": "SAP ASCS Application",
+      "description": "SAP ASCS software."
+    },
+    {
+      "name": "cmdb_ci_appl_sap_bo",
+      "label": "SAP Business Objects CMS Server",
+      "description": "SAP Business Objects CMS server software."
+    },
+    {
+      "name": "cmdb_ci_appl_sap_bo_scheduler",
+      "label": "SAP BO BOXIScheduleRouter",
+      "description": "SAP BO BOXIScheduleRouter software."
+    },
+    {
+      "name": "cmdb_ci_appl_sap_bus_obj",
+      "label": "SAP Business Objects",
+      "description": "SAP bushiness Object application."
+    },
+    {
+      "name": "cmdb_ci_appl_sap_ci",
+      "label": "SAP CI Application",
+      "description": "The SAP Central Instance software."
+    },
+    {
+      "name": "cmdb_ci_appl_sap_di",
+      "label": "SAP DI Application",
+      "description": "Oracle Development Infrastructure (DI) software."
+    },
+    {
+      "name": "cmdb_ci_appl_sap_ers",
+      "label": "SAP ERS Application",
+      "description": "Oracle Evaluated Receipt Settlement (ERS) software."
+    },
+    {
+      "name": "cmdb_ci_appl_sap_hana_db",
+      "label": "SAP Hana Db",
+      "description": "SAP HANA software."
+    },
+    {
+      "name": "cmdb_ci_appl_sap_jc",
+      "label": "SAP JC Application",
+      "description": "SAP JC (java application) software."
+    },
+    {
+      "name": "cmdb_ci_appl_sap_scs",
+      "label": "SAP SCS Application",
+      "description": "SAP SCS (central services) software."
+    },
+    {
+      "name": "cmdb_ci_appl_sendmail",
+      "label": "Sendmail",
+      "description": "Sendmail (open source) software."
+    },
+    {
+      "name": "cmdb_ci_appl_sharepoint",
+      "label": "SharePoint",
+      "description": "Microsoft SharePoint software."
+    },
+    {
+      "name": "cmdb_ci_appl_sp_service",
+      "label": "SharePoint Service",
+      "description": "Microsoft Windows Sharepoint Services (WSS) software."
+    },
+    {
+      "name": "cmdb_ci_appl_tibco_hawk",
+      "label": "Tibco Hawk",
+      "description": "TIBCO Hawk software."
+    },
+    {
+      "name": "cmdb_ci_appl_tibco_matrix",
+      "label": "ActiveMatrix Business Works",
+      "description": "TIBCO ActiveMatrix BusinessWorks software."
+    },
+    {
+      "name": "cmdb_ci_appl_tibco_matrix_proc",
+      "label": "ActiveMatrix Business Works Process",
+      "description": "TIBCO ActiveMatrix BusinessWorks Process software."
+    },
+    {
+      "name": "cmdb_ci_appl_tibco_message",
+      "label": "Tibco Enterprise Message Service",
+      "description": "TIBCO Enterprise Message Service software."
+    },
+    {
+      "name": "cmdb_ci_appl_tibco_queue",
+      "label": "EMS Queue",
+      "description": "Tibco EMS (Enterprise Message Service) Queues software."
+    },
+    {
+      "name": "cmdb_ci_appl_tuxedo",
+      "label": "Tuxedo",
+      "description": "Tuxedo software (middleware transactions for UNIX, Extended for Distributed Operations)."
+    },
+    {
+      "name": "cmdb_ci_appl_tuxedo_portal",
+      "label": "Tuxedo Portal",
+      "description": "Tuxedo portal software."
+    },
+    {
+      "name": "cmdb_ci_appl_vign_content_svr",
+      "label": "Vignette Content Management Server",
+      "description": "Vignette (Open Text Corp) Content Management Server software."
+    },
+    {
+      "name": "cmdb_ci_appl_vignette_search",
+      "label": "Vignette Search Starter",
+      "description": "Vignette (Open Text Corp) Search Server software."
+    },
+    {
+      "name": "cmdb_ci_appl_vignette_server",
+      "label": "Vignette Server",
+      "description": "Vignette (Open Text Corp) Server software."
+    },
+    {
+      "name": "cmdb_ci_appl_weblogic_jms",
+      "label": "Weblogic JMS Server",
+      "description": "WebLogic JMS software."
+    },
+    {
+      "name": "cmdb_ci_appl_weblogic_lb",
+      "label": "Weblogic LB",
+      "description": "WebLogic Server load balancer software."
+    },
+    {
+      "name": "cmdb_ci_appl_weblogicmodule",
+      "label": "Weblogic Module Server",
+      "description": "WebLogic Server software."
+    },
+    {
+      "name": "cmdb_ci_appl_websphere_portal",
+      "label": "Websphere Portal",
+      "description": "WebSphere Portal software."
+    },
+    {
+      "name": "cmdb_ci_appl_wmb",
+      "label": "WMB Flow",
+      "description": "WebSphere Message Broker software."
+    },
+    {
+      "name": "cmdb_ci_application_cluster",
+      "label": "Application Cluster",
+      "description": "Logical cluster of application-tier servers."
+    },
+    {
+      "name": "cmdb_ci_application_software",
+      "label": "Application Software",
+      "description": "Computer program designed to perform a group of coordinated functions, tasks, or\n activities for the benefit of the user.  An extension of the Software table, providing installed software information (not\n a running process)."
+    },
+    {
+      "name": "cmdb_ci_ats_power_eq",
+      "label": "Automatic Transfer Switch",
+      "description": "Electrical power switch that switches a load between two sources."
+    },
+    {
+      "name": "cmdb_ci_availability_set",
+      "label": "Availability Set",
+      "description": "Logical grouping of virtual machines running on Microsoft Azure\n platform."
+    },
+    {
+      "name": "cmdb_ci_base_rpa_process",
+      "label": "Base Bot Process",
+      "description": "Business reason, process type, and schedule."
+    },
+    {
+      "name": "cmdb_ci_base_rpa_robot",
+      "label": "Base Robot",
+      "description": "Machine where robot is running, state, and type."
+    },
+    {
+      "name": "cmdb_ci_batch_job",
+      "label": "Batch Job",
+      "description": "A computer program or set of programs processed in batch mode."
+    },
+    {
+      "name": "cmdb_ci_aws_datacenter",
+      "label": "AWS datacenter",
+      "description": "Logical representation of an Amazon Web Services datacenter."
+    },
+    {
+      "name": "cmdb_ci_azure_datacenter",
+      "label": "Azure datacener",
+      "description": "Logical representation of a Microsoft Azure datacenter."
+    },
+    {
+      "name": "cmdb_ci_business_process",
+      "label": "Business Process",
+      "description": "A process that is owned and carried out by the business and contributes to the\n delivery of a product or business service to a business customer."
+    },
+    {
+      "name": "cmdb_ci_chassis_server",
+      "label": "Server Chassis",
+      "description": "A metal structure that is used to house or physically assemble servers in\n various different form factors."
+    },
+    {
+      "name": "cmdb_ci_cim_profile",
+      "label": "CIM Profiles",
+      "description": "CIM Profiles (UML)."
+    },
+    {
+      "name": "cmdb_ci_cim_server",
+      "label": "CIM Server",
+      "description": "Server hosting CIM profiles."
+    },
+    {
+      "name": "cmdb_ci_circuit",
+      "label": "Circuit",
+      "description": "Electrical circuits information."
+    },
+    {
+      "name": "cmdb_ci_cloud_database",
+      "label": "Cloud Database",
+      "description": "Database which runs on a cloud computing platform."
+    },
+    {
+      "name": "cmdb_ci_cloud_ip_address",
+      "label": "Cloud IP Address",
+      "description": "Web server which runs on a cloud computing platform."
+    },
+    {
+      "name": "cmdb_ci_cluster",
+      "label": "Cluster",
+      "description": "Logical group of computing resources bound together by software to function as one logical computing resource."
+    },
+    {
+      "name": "cmdb_ci_cluster_node",
+      "label": "Cluster Node",
+      "description": "Single computing resource which is logically/operationally bound into a\n cluster."
+    },
+    {
+      "name": "cmdb_ci_cluster_resource",
+      "label": "Cluster Resource",
+      "description": "System object that is a set or grouping of cluster resources that are used to\n manage events that occur in a clustered environment."
+    },
+    {
+      "name": "cmdb_ci_cluster_vip",
+      "label": "Cluster Virtual IP",
+      "description": "Cluster VIP information."
+    },
+    {
+      "name": "cmdb_ci_cmp_price_product_base",
+      "label": "Cloud Product Price Base",
+      "description": "Used to calculate the approximate monthly cost of running a stack built on\n Virtual Servers in cloud environment: Cloud Price Base: Common price base to store pricing info of all the\n resources of all the supported clouds.  Cloud Price Product Base: Base table to store the common attributes of all\n the pricing resources.  VM Instance Price: Specific table that extends the Cloud Price Product base to store the VM specific product info of all the supported clouds.  Parent class for cloud product prices such as VM instance price."
+    },
+    {
+      "name": "cmdb_ci_cmp_resource",
+      "label": "Cloud Resource",
+      "description": "Generic cloud resources."
+    },
+    {
+      "name": "cmdb_ci_comm",
+      "label": "Communication Device",
+      "description": "Communication devices information. A choice list containing devices such as\n cellphone, phone, conference phone, and Wi-Fi."
+    },
+    {
+      "name": "cmdb_ci_computer_room",
+      "label": "Computer Room",
+      "description": "Logical representation of a computer room."
+    },
+    {
+      "name": "cmdb_ci_config_automation_server",
+      "label": "Management Server",
+      "description": "Dev Ops tools such as Chef and Puppet, that are used to manage server\n configurations.  Parent class for application management servers."
+    },
+    {
+      "name": "cmdb_ci_config_file",
+      "label": "Configuration file",
+      "description": "Configuration files which establish the parameters and initial settings for\n some computer programs."
+    },
+    {
+      "name": "cmdb_ci_crac",
+      "label": "Computer Room AC",
+      "description": "Air conditioning units used to cool data centers."
+    },
+    {
+      "name": "cmdb_ci_csu_dsu_network",
+      "label": "CSU/DSU",
+      "description": "Digital-interface device used to connect networking equipment to a digital\n circuit."
+    },
+    {
+      "name": "cmdb_ci_database",
+      "label": "Database",
+      "description": "Organized collection of data such as the set of files where data is stored, the\n reason for a database, and the metadata about the data."
+    },
+    {
+      "name": "cmdb_ci_datacenter",
+      "label": "Data Center",
+      "description": "Facility used to house computer systems and associated components, such as\n telecommunications and storage systems. It generally includes redundant or backup\n power supplies, redundant data communications connections, environmental controls\n (such as air conditioning and fire suppression), and various security\n devices."
+    },
+    {
+      "name": "cmdb_ci_datapower_server",
+      "label": "Data Power Hosting Server",
+      "description": "Server running IBM DataPower Gateway software."
+    },
+    {
+      "name": "cmdb_ci_datastore",
+      "label": "Datastore",
+      "description": "Datastores are like file systems, abstracting the physical storage and providing\n a model for storing files. The child class represents the VMware specific\n Datastore.  Parent class for VMWare datastore object types such as vCenter Datastores."
+    },
+    {
+      "name": "cmdb_ci_db_catalog",
+      "label": "Database Catalog",
+      "description": "Metadata which defines database objects such as base tables, views (virtual\n tables), synonyms, value ranges, indexes, users, and user groups, for a specific\n database instance."
+    },
+    {
+      "name": "cmdb_ci_db_db2_catalog",
+      "label": "DB2 Database (Before CMDB CI Class Models v1.67.0, the label (display name) was DB2 Catalog)",
+      "description": "Database catalog for DB2 database."
+    },
+    {
+      "name": "cmdb_ci_db_db2_instance",
+      "label": "DB2 Subsystem (Before CMDB CI Class Models v1.67.0, the label (display name) was DB2 Instance)",
+      "description": "Instance of a DB2 database."
+    },
+    {
+      "name": "cmdb_ci_db_hbase_instance",
+      "label": "HBase Instance",
+      "description": "Instance of an HBase database."
+    },
+    {
+      "name": "cmdb_ci_db_instance",
+      "label": "Database Instance",
+      "description": "Software and memory used to manipulate data in a database."
+    },
+    {
+      "name": "cmdb_ci_db_mongodb_instance",
+      "label": "MongoDB Instance",
+      "description": "Instance of a MongoDB database."
+    },
+    {
+      "name": "cmdb_ci_db_mssql_analysis",
+      "label": "SQL Server Analysis Services",
+      "description": "Microsoft SQL Server Analysis Services software."
+    },
+    {
+      "name": "cmdb_ci_db_mssql_catalog",
+      "label": "MSFT SQL Catalog",
+      "description": "Database catalog for a specific instance of a Microsoft SQL database."
+    },
+    {
+      "name": "cmdb_ci_db_mssql_instance",
+      "label": "MSFT SQL Instance",
+      "description": "Microsoft SQL instance."
+    },
+    {
+      "name": "cmdb_ci_db_mssql_int_job",
+      "label": "SQL Server Integration Services Job",
+      "description": "Scheduled job to run a SQL Server Integration Service package."
+    },
+    {
+      "name": "cmdb_ci_db_mssql_integration",
+      "label": "SQL Server Integration Services",
+      "description": "MSQL Server Integration Services software."
+    },
+    {
+      "name": "cmdb_ci_db_mssql_reporting",
+      "label": "SQL Server Reporting Services",
+      "description": "SQL Server software used for server-based reporting generation."
+    },
+    {
+      "name": "cmdb_ci_db_mysql_catalog",
+      "label": "MySQL Catalog",
+      "description": "Database catalog for a specific instance of a MySQL database."
+    },
+    {
+      "name": "cmdb_ci_db_mysql_clustermgnode",
+      "label": "MySQLClusterMGMNode",
+      "description": "MySQL primary administrative interface to a running cluster."
+    },
+    {
+      "name": "cmdb_ci_db_mysql_clusternode",
+      "label": "MySQLClusterDataNode",
+      "description": "Summary table used in the [ndbd] or [ndbd default] sections of a config.ini\n file for configuring MySQL Cluster data nodes."
+    },
+    {
+      "name": "cmdb_ci_db_mysql_instance",
+      "label": "MySQL Instance",
+      "description": "Instance of a MySQL database."
+    },
+    {
+      "name": "cmdb_ci_db_ora_catalog",
+      "label": "Oracle Catalog",
+      "description": "Database catalog for a specific instance of an Oracle database."
+    },
+    {
+      "name": "cmdb_ci_db_ora_instance",
+      "label": "Oracle Instance",
+      "description": "Instance of an Oracle database."
+    },
+    {
+      "name": "cmdb_ci_db_ora_listener",
+      "label": "Oracle Database Listener",
+      "description": "Process that runs on an Oracle Database Server."
+    },
+    {
+      "name": "cmdb_ci_db_postgresql_instance",
+      "label": "PostgreSQL Instance",
+      "description": "Instance of a PostgreSQL database."
+    },
+    {
+      "name": "cmdb_ci_db_syb_catalog",
+      "label": "Sybase Catalog",
+      "description": "Database catalog for a specific instance of a Sybase database."
+    },
+    {
+      "name": "cmdb_ci_db_syb_instance",
+      "label": "Sybase Instance",
+      "description": "Instance of a Sybase database."
+    },
+    {
+      "name": "cmdb_ci_desktop_software",
+      "label": "Desktop Software",
+      "description": "Software used on desktops and laptops."
+    },
+    {
+      "name": "cmdb_ci_dir_policy_server",
+      "label": "Policy Server",
+      "description": "Policy server, which provides a security component of a policy-based network\n that provides authorization services and facilitates tracking and control of\n files."
+    },
+    {
+      "name": "cmdb_ci_dir_site_minder_server",
+      "label": "Site Minder",
+      "description": "Server running SiteMinder software."
+    },
+    {
+      "name": "cmdb_ci_directory_ad_forest",
+      "label": "AD Forest",
+      "description": "Active Directory forest."
+    },
+    {
+      "name": "cmdb_ci_directory_ha",
+      "label": "HA Proxy",
+      "description": "HAProxy software."
+    },
+    {
+      "name": "cmdb_ci_directory_iifp",
+      "label": "IIFP",
+      "description": "Identity Identification Feature Pack (Active Directory) software."
+    },
+    {
+      "name": "cmdb_ci_directory_ldap",
+      "label": "LDAP DB",
+      "description": "LDAP (Lightweight Directory Access Protocol) database software."
+    },
+    {
+      "name": "cmdb_ci_directory_server",
+      "label": "Directory Server",
+      "description": "Server running LDAP software."
+    },
+    {
+      "name": "cmdb_ci_disk",
+      "label": "Disk",
+      "description": "General category of data storage mechanisms."
+    },
+    {
+      "name": "cmdb_ci_disk_partition",
+      "label": "Disk Partition",
+      "description": "Sections of a disk separated so that information in each section can be managed\n separately."
+    },
+    {
+      "name": "cmdb_ci_display_hardware",
+      "label": "Display Hardware",
+      "description": "Hardware used to display information in visual form."
+    },
+    {
+      "name": "cmdb_ci_dns_alias",
+      "label": "DNS Alias",
+      "description": "Synonym for the host used to resolve DNS addresses."
+    },
+    {
+      "name": "cmdb_ci_dns_name",
+      "label": "DNS Name",
+      "description": "Primary DNS names."
+    },
+    {
+      "name": "cmdb_ci_docker",
+      "label": "Docker Container",
+      "description": "Docker containers (a runtime instance of a docker image)."
+    },
+    {
+      "name": "cmdb_ci_docker_engine",
+      "label": "Docker Engine",
+      "description": "Docker software for running and managing Docker containers."
+    },
+    {
+      "name": "cmdb_ci_docker_image",
+      "label": "Docker Image",
+      "description": "Docker images. Ordered collection of root filesystem changes and the\n corresponding execution parameters for use within a container runtime."
+    },
+    {
+      "name": "cmdb_ci_docker_image_tag",
+      "label": "Docker Image Tag",
+      "description": "Docker tag, which is a label applied to a Docker image in a repository."
+    },
+    {
+      "name": "cmdb_ci_docker_local_image",
+      "label": "Docker Local Image",
+      "description": "Locally managed Docker image."
+    },
+    {
+      "name": "cmdb_ci_drs_vm_config",
+      "label": "DRS VM Config",
+      "description": "Distributed Resource Scheduler (DRS) behavior for the VMs in the vCenter that\n override the cluster behavior."
+    },
+    {
+      "name": "cmdb_ci_ec2_instance",
+      "label": "EC2 Virtual Machine Instance",
+      "description": "Virtual machine running in the Amazon Elastic Compute Cloud (EC2)\n platform."
+    },
+    {
+      "name": "cmdb_ci_email_server",
+      "label": "Email Server",
+      "description": "Server running email software."
+    },
+    {
+      "name": "cmdb_ci_email_server_jes",
+      "label": "JES",
+      "description": "Server running JES software (multi-featured hybrid MTA/MDA server)."
+    },
+    {
+      "name": "cmdb_ci_endpoint",
+      "label": "Endpoint",
+      "description": "Endpoint, which represents the entry point to a service, a process, or a queue\n or topic destination in service-oriented architecture."
+    },
+    {
+      "name": "cmdb_ci_environment",
+      "label": "Environment",
+      "description": "Logical grouping of hardware and software used to develop, test, and deliver\n computing services. For example: development, test, quality assurance, and\n production."
+    },
+    {
+      "name": "cmdb_ci_esx_resource_pool",
+      "label": "ESX Resource Pool",
+      "description": "VMware set of physical resources."
+    },
+    {
+      "name": "cmdb_ci_esx_server",
+      "label": "ESX Server",
+      "description": "Physical ESX server running the VMware ESXi operating system."
+    },
+    {
+      "name": "cmdb_ci_exchange_backend",
+      "label": "ExchangeBackEndServer",
+      "description": "Server running Exchange software."
+    },
+    {
+      "name": "cmdb_ci_exchange_cas",
+      "label": "Exchange Client Access Server",
+      "description": "Server running Exchange software providing client access services."
+    },
+    {
+      "name": "cmdb_ci_exchange_edge_transport_server",
+      "label": "Exchange Edge Transport Server",
+      "description": "Server running Exchange Edge Transport software."
+    },
+    {
+      "name": "cmdb_ci_exchange_frontend",
+      "label": "ExchangeFrontEndServer",
+      "description": "Server running Exchange software."
+    },
+    {
+      "name": "cmdb_ci_exchange_hub",
+      "label": "ExchangeHub",
+      "description": "Server running Exchange Hub software."
+    },
+    {
+      "name": "cmdb_ci_exchange_hub_transport_server",
+      "label": "Exchange Hub Transport Server",
+      "description": "Server running Exchange Hub software providing transport services."
+    },
+    {
+      "name": "cmdb_ci_exchange_mailbox",
+      "label": "Exchange MailBox",
+      "description": "Exchange email account."
+    },
+    {
+      "name": "cmdb_ci_exchange_mailbox_server",
+      "label": "Exchange Mailbox Server",
+      "description": "Server running Exchange software providing client access services."
+    },
+    {
+      "name": "cmdb_ci_exchange_service_component",
+      "label": "Exchange Service Component",
+      "description": "Exchange Service Component software."
+    },
+    {
+      "name": "cmdb_ci_facility_hardware",
+      "label": "Facility Hardware",
+      "description": "Base class for hardware used to facilities services such as electric, water,\n sewer, air, and security."
+    },
+    {
+      "name": "cmdb_ci_fc_disk",
+      "label": "Fibre Channel Disk",
+      "description": "Base table for fibre channel disk."
+    },
+    {
+      "name": "cmdb_ci_fc_export",
+      "label": "Fibre Channel Export",
+      "description": "Storage volume exported by a storage server via Fibre Channel protocol."
+    },
+    {
+      "name": "cmdb_ci_fc_port",
+      "label": "Fibre Channel Port",
+      "description": "Fibre Channel port on a storage server, FC switch, or on a host's HBA."
+    },
+    {
+      "name": "cmdb_ci_fddi_network",
+      "label": "FDDI Cards",
+      "description": "Fiber Distributed Data Interface cards."
+    },
+    {
+      "name": "cmdb_ci_file_system",
+      "label": "File System",
+      "description": "File system information for a server, capturing details such as mount point,\n capacity, and type of file system."
+    },
+    {
+      "name": "cmdb_ci_file_system_nfs",
+      "label": "NFS File system",
+      "description": "Extension of File System, which provides NFS file system information."
+    },
+    {
+      "name": "cmdb_ci_file_system_smb",
+      "label": "SMB File system",
+      "description": "Extension of File System, which provides SMB file system information."
+    },
+    {
+      "name": "cmdb_ci_firewall_network",
+      "label": "Firewall Hardware",
+      "description": "Firewall hardware."
+    },
+    {
+      "name": "cmdb_ci_ftp_server",
+      "label": "FTP Server",
+      "description": "Server providing FTP services."
+    },
+    {
+      "name": "cmdb_ci_fuel_tank",
+      "label": "Fuel Tank",
+      "description": "Fuel tank."
+    },
+    {
+      "name": "cmdb_ci_generator_power_eq",
+      "label": "Power Generator",
+      "description": "Power generator."
+    },
+    {
+      "name": "cmdb_ci_group",
+      "label": "Group",
+      "description": "Logical group of CIs."
+    },
+    {
+      "name": "cmdb_ci_hardware",
+      "label": "Hardware",
+      "description": "Base class for hardware."
+    },
+    {
+      "name": "cmdb_ci_host_cluster",
+      "label": "Host Cluster",
+      "description": "Cloud agnostic way of representing a group of hosts as a cluster. The child class\n represents VMware vCenter Cluster specific details.  Parent class for VMWare host cluster object types such as vCenter Clusters."
+    },
+    {
+      "name": "cmdb_ci_hpux_server",
+      "label": "HPUX Server",
+      "description": "Server running HPUX software."
+    },
+    {
+      "name": "cmdb_ci_hub_network",
+      "label": "Hub Hardware",
+      "description": "Physical network hub."
+    },
+    {
+      "name": "cmdb_ci_hvac",
+      "label": "HVAC Equipment",
+      "description": "Heating, ventilation, and air conditioning equipment."
+    },
+    {
+      "name": "cmdb_ci_hyper_v_cluster",
+      "label": "Hyper-V Cluster",
+      "description": "Cluster of the Hyper-V servers."
+    },
+    {
+      "name": "cmdb_ci_hyper_v_instance",
+      "label": "Hyper-V Virtual Machine Instance",
+      "description": "Hyper-V virtual machine instance. This table extends the generic Virtual\n Machine Instance [cmdb_ci_vm_instance] table."
+    },
+    {
+      "name": "cmdb_ci_hyper_v_network",
+      "label": "Hyper-V Virtual Network",
+      "description": "Hyper-V virtual network."
+    },
+    {
+      "name": "cmdb_ci_hyper_v_object",
+      "label": "Hyper-V Object",
+      "description": "Base class for all Hyper-V objects."
+    },
+    {
+      "name": "cmdb_ci_hyper_v_resource_pool",
+      "label": "Hyper-V Resource Pool",
+      "description": "Hyper-V resource pool."
+    },
+    {
+      "name": "cmdb_ci_hyper_v_rpool_comp",
+      "label": "Hyper-V Resource Pool Component",
+      "description": "Resource pool component belonging to resource pool."
+    },
+    {
+      "name": "cmdb_ci_hyper_v_server",
+      "label": "Hyper-V Server",
+      "description": "Server running Hyper-V software."
+    },
+    {
+      "name": "cmdb_ci_ids_network",
+      "label": "Intrusion Detection System",
+      "description": "Security intrusion detection systems."
+    },
+    {
+      "name": "cmdb_ci_iisdirectory",
+      "label": "IIS Virtual Directory",
+      "description": "Virtual Directory in IIS Manager."
+    },
+    {
+      "name": "cmdb_ci_imaging_hardware",
+      "label": "Imaging Hardware",
+      "description": "Hardware used to create electronic/physical images."
+    },
+    {
+      "name": "cmdb_ci_inetinfo",
+      "label": "Inetinfo service",
+      "description": "Inetinfo service of IIS application."
+    },
+    {
+      "name": "cmdb_ci_inf_software",
+      "label": "Infrastructure Software",
+      "description": "Base class for enterprise software or programs specifically designed to help\n business organizations perform basic tasks such as workforce support, business\n transactions and internal services, and processes."
+    },
+    {
+      "name": "cmdb_ci_information_object",
+      "label": "Information Object",
+      "description": "Types of information that a business application or any other entity handles.  For example: 'Employee Salary Data', Employee Personal Data', and 'Sales\n Data'."
+    },
+    {
+      "name": "cmdb_ci_installed_bundles",
+      "label": "Installed Bundles",
+      "description": "Extension of the Virtual Machine Object [cmdb_ci_vm_object] table, which\n represents bundles of installed software."
+    },
+    {
+      "name": "cmdb_ci_infra_service",
+      "label": "Infrastructure Service",
+      "description": "IT services which support providing computing infrastructure."
+    },
+    {
+      "name": "cmdb_ci_infra_service_ldap",
+      "label": "LDAP Service",
+      "description": "Running LDAP service."
+    },
+    {
+      "name": "cmdb_ci_ip_address",
+      "label": "IP Address",
+      "description": "IP address."
+    },
+    {
+      "name": "cmdb_ci_ip_device",
+      "label": "IP Device",
+      "description": "Base class for devices with an IP address."
+    },
+    {
+      "name": "cmdb_ci_ip_firewall",
+      "label": "IP Firewall",
+      "description": "Firewall hardware."
+    },
+    {
+      "name": "cmdb_ci_ip_network",
+      "label": "IP Network",
+      "description": "IP network information capturing details such as subnet, router, and\n router_interface_type."
+    },
+    {
+      "name": "cmdb_ci_ip_phone",
+      "label": "IP Phone",
+      "description": "IP-enabled (VOIP) phone."
+    },
+    {
+      "name": "cmdb_ci_ip_router",
+      "label": "IP Router",
+      "description": "Specialization of the Network Gear [cmdb_ci_netgear] table."
+    },
+    {
+      "name": "cmdb_ci_ip_server",
+      "label": "IP Server",
+      "description": "Server hardware."
+    },
+    {
+      "name": "cmdb_ci_ip_service",
+      "label": "IP Service Instance",
+      "description": "Base table for IP services running on a server such as Unix daemon or Windows service."
+    },
+    {
+      "name": "cmdb_ci_ip_switch",
+      "label": "IP Switch",
+      "description": "Specialization of the Network Gear [cmdb_ci_netgear] table."
+    },
+    {
+      "name": "cmdb_ci_iplanet_web_server",
+      "label": "Iplanet Web Server",
+      "description": "Server running Oracle iPlanet Web Server (OiWS) software."
+    },
+    {
+      "name": "cmdb_ci_isam_server",
+      "label": "ISAM Server",
+      "description": "Server running ISAM software."
+    },
+    {
+      "name": "cmdb_ci_iscsi_disk",
+      "label": "iSCSI Disk",
+      "description": "Host mount of an iSCSI disk."
+    },
+    {
+      "name": "cmdb_ci_iscsi_export",
+      "label": "iSCSI Export",
+      "description": "Storage volume exported by a storage server via iSCSI."
+    },
+    {
+      "name": "cmdb_ci_kubernetes_component",
+      "label": "Kubernetes Component",
+      "description": "Kubernetes cluster, ingress, namespace, node, pod, service, volume, and workload. Also represents open shift build conf, deployment conf, docker images repository, group, images, stream, project, route, and user.  Parent class for Kubernetes components such as Pods and Clusters."
+    },
+    {
+      "name": "cmdb_ci_kvm",
+      "label": "KVM",
+      "description": "Hypervisor that manages kernel-based virtual machines (KVMs)."
+    },
+    {
+      "name": "cmdb_ci_kvm_network",
+      "label": "Network",
+      "description": "KVM Virtual network."
+    },
+    {
+      "name": "cmdb_ci_kvm_object",
+      "label": "KVM Object",
+      "description": "Base object for all KVM objects."
+    },
+    {
+      "name": "cmdb_ci_kvm_storage_pool",
+      "label": "Storage Pool",
+      "description": "KVM storage pool."
+    },
+    {
+      "name": "cmdb_ci_kvm_storage_volume",
+      "label": "Storage Volume",
+      "description": "KVM storage volume."
+    },
+    {
+      "name": "cmdb_ci_kvm_vm_instance",
+      "label": "KVM Virtual Machine Instance",
+      "description": "Virtual machine instance running on a KVM hypervisor."
+    },
+    {
+      "name": "cmdb_ci_lb",
+      "label": "Load Balancer",
+      "description": "Server functioning as a load balancer."
+    },
+    {
+      "name": "cmdb_ci_lb_a10",
+      "label": "A10 Load Balancer",
+      "description": "Server functioning as an A10 load balancer."
+    },
+    {
+      "name": "cmdb_ci_lb_ace",
+      "label": "ACE",
+      "description": "Server functioning as an ACE load balancer."
+    },
+    {
+      "name": "cmdb_ci_lb_alteon",
+      "label": "Alteon",
+      "description": "Server functioning as an Alteon load balancer."
+    },
+    {
+      "name": "cmdb_ci_lb_appl",
+      "label": "Load Balancer Application",
+      "description": "Application that provides load balancing functionality."
+    },
+    {
+      "name": "cmdb_ci_lb_backend_server",
+      "label": "LB Backend Server",
+      "description": "Server functioning as a backend load balancer."
+    },
+    {
+      "name": "cmdb_ci_lb_bigip",
+      "label": "F5 BIG-IP",
+      "description": "Server functioning as an F5 BIG-IP load balancer."
+    },
+    {
+      "name": "cmdb_ci_lb_cisco_csm",
+      "label": "Cisco CSM",
+      "description": "Server functioning as a Cisco CSM load balancer."
+    },
+    {
+      "name": "cmdb_ci_lb_cisco_css",
+      "label": "Cisco CSS",
+      "description": "Server functioning as a Cisco CSS load balancer."
+    },
+    {
+      "name": "cmdb_ci_lb_f5_gtm",
+      "label": "F5 BigIP GTM",
+      "description": "Server functioning as an F5 BigIP GTM load balancer."
+    },
+    {
+      "name": "cmdb_ci_lb_f5_ltm",
+      "label": "F5 BigIP LTM",
+      "description": "Server functioning as an F5 BigIP LTM load balancer."
+    },
+    {
+      "name": "cmdb_ci_lb_haproxy",
+      "label": "HAProxy Load Balancer",
+      "description": "Server functioning as an HA Proxy load balancer."
+    },
+    {
+      "name": "cmdb_ci_lb_isa",
+      "label": "ISA Server",
+      "description": "Server functioning as an ISA load balancer."
+    },
+    {
+      "name": "cmdb_ci_lb_modjk",
+      "label": "Modjk Load Balancer",
+      "description": "Server functioning as a Cisco CSM load balancer."
+    },
+    {
+      "name": "cmdb_ci_lb_modproxy",
+      "label": "ModProxy Load Balancer",
+      "description": "Server functioning as a ModProxy load balancer."
+    },
+    {
+      "name": "cmdb_ci_lb_netscaler",
+      "label": "Citrix Netscaler",
+      "description": "Server functioning as a Citrix Netscaler load balancer."
+    },
+    {
+      "name": "cmdb_ci_lb_network",
+      "label": "Network Load Balancer",
+      "description": "Server performing network load balancing."
+    },
+    {
+      "name": "cmdb_ci_lb_nginx",
+      "label": "Nginx Load Balancer",
+      "description": "Server functioning as an Nginx load balancer."
+    },
+    {
+      "name": "cmdb_ci_lb_pool",
+      "label": "Load Balancer Pool",
+      "description": "Collection of host-to-port mappings to be balanced."
+    },
+    {
+      "name": "cmdb_ci_lb_pool_member",
+      "label": "Load Balancer Pool Member",
+      "description": "Host-to-port mapping of a request to be balanced."
+    },
+    {
+      "name": "cmdb_ci_lb_radware",
+      "label": "Radware Load Balancer",
+      "description": "Server functioning as a Radware load balancer."
+    },
+    {
+      "name": "cmdb_ci_lb_service",
+      "label": "Load Balancer Service",
+      "description": "Virtual service that the device balances by forwarding requests to members\n within a pool."
+    },
+    {
+      "name": "cmdb_ci_lb_template",
+      "label": "Load Balancer Template",
+      "description": "Load balancer template which contains load balancer-related configuration\n settings for a specific type of network traffic."
+    },
+    {
+      "name": "cmdb_ci_lif",
+      "label": "LIF",
+      "description": "Logical interface."
+    },
+    {
+      "name": "cmdb_ci_lb_vlan",
+      "label": "Load Balancer VLAN",
+      "description": "Virtual LAN segment."
+    },
+    {
+      "name": "cmdb_ci_linux_server",
+      "label": "Linux Server",
+      "description": "Server running Linux software."
+    },
+    {
+      "name": "cmdb_ci_logical_datacenter",
+      "label": "Logical Datacenter",
+      "description": "VMware vCenter logical datacenter."
+    },
+    {
+      "name": "cmdb_ci_lpar",
+      "label": "Logical Partition",
+      "description": "Logical partition, commonly called an LPAR, is a subset of a computer's\n hardware resources, virtualized as a separate computer."
+    },
+    {
+      "name": "cmdb_ci_lvm_pool",
+      "label": "LVM Pool",
+      "description": "Linux Volume Manager storage pool."
+    },
+    {
+      "name": "cmdb_ci_lvm_pool_member",
+      "label": "LVM Pool Member",
+      "description": "Linux Volume Manager storage pool member."
+    },
+    {
+      "name": "cmdb_ci_mainframe",
+      "label": "IBM Mainframe",
+      "description": "IBM large-scale computer system."
+    },
+    {
+      "name": "cmdb_ci_mainframe_hardware",
+      "label": "Mainframe Hardware",
+      "description": "The hardware components of a large-scale computer system."
+    },
+    {
+      "name": "cmdb_ci_mainframe_lpar",
+      "label": "IBM Mainframe LPAR",
+      "description": "Logical partition, which is commonly called an LPAR, and is a subset of a\n mainframes computer's hardware resources, virtualized as a separate\n computer."
+    },
+    {
+      "name": "cmdb_ci_memory_module",
+      "label": "Memory Module",
+      "description": "Circuit board that provides for memory storage."
+    },
+    {
+      "name": "cmdb_ci_mfp_printer",
+      "label": "Multi-function Printer",
+      "description": "Physical device with scan, copy, and fax capabilities."
+    },
+    {
+      "name": "cmdb_ci_microsoft_iis_web_server",
+      "label": "Microsoft iis Web Server",
+      "description": "Server running Internet Information Services (IIS) for Windows\n software."
+    },
+    {
+      "name": "cmdb_ci_modem_network",
+      "label": "Modem Hardware",
+      "description": "Physical modem hardware."
+    },
+    {
+      "name": "cmdb_ci_mpio_pool",
+      "label": "Multipath IO Pool",
+      "description": "Multipath IO pool, representing multiple redundant paths to storage."
+    },
+    {
+      "name": "cmdb_ci_mpio_pool_group",
+      "label": "Multipath IO Pool Group",
+      "description": "Group of multipath IO pools."
+    },
+    {
+      "name": "cmdb_ci_mpio_pool_path",
+      "label": "Multipath IO Pool Path",
+      "description": "Single path in an MPIO pool."
+    },
+    {
+      "name": "cmdb_ci_msd",
+      "label": "Mass Storage Device",
+      "description": "Physical storage device."
+    },
+    {
+      "name": "cmdb_ci_nas_file_system",
+      "label": "NAS File System",
+      "description": "Extension of the File System [cmdb_ci_file_system] table, representing network\n attached storage."
+    },
+    {
+      "name": "cmdb_ci_nat_gateway",
+      "label": "NAT Gateway",
+      "description": "Functionality for NAT gateway."
+    },
+    {
+      "name": "cmdb_ci_netapp_cdot",
+      "label": "NetApp CDOT",
+      "description": "Functionality of NetApp Clustered Data OnTap operating system"
+    },
+    {
+      "name": "cmdb_ci_netapp_datacenter",
+      "label": "NetApp Datacenter",
+      "description": "NetApp logical datacenter."
+    },
+    {
+      "name": "cmdb_ci_netapp_svm",
+      "label": "NetApp SVM",
+      "description": "NetApp Storage Virtual Machine."
+    },
+    {
+      "name": "cmdb_ci_netapp_volume",
+      "label": "NetApp Volume",
+      "description": "NetApp FlexVol storage volume."
+    },
+    {
+      "name": "cmdb_ci_net_app_server",
+      "label": "Network Appliance Hardware",
+      "description": "Server configured to perform as a networking appliance."
+    },
+    {
+      "name": "cmdb_ci_netgear",
+      "label": "Network Gear",
+      "description": "Extension of the Hardware table, that captures network equipment such as\n router, switch, hub, gateway, and bridge."
+    },
+    {
+      "name": "cmdb_ci_netware_server",
+      "label": "Netware Server",
+      "description": "Server running NetWare software."
+    },
+    {
+      "name": "cmdb_ci_network",
+      "label": "Cloud Network",
+      "description": "VMware vCenter cloud network."
+    },
+    {
+      "name": "cmdb_ci_network _acl",
+      "label": "Network ACL",
+      "description": "Network access control list (ACL)."
+    },
+    {
+      "name": "cmdb_ci_network_acl_rule",
+      "label": "Network ACL Rule",
+      "description": "Rule used to control networking access rights."
+    },
+    {
+      "name": "cmdb_ci_network_adapter",
+      "label": "Network Adapter",
+      "description": "Network adapter hardware."
+    },
+    {
+      "name": "cmdb_ci_network_policy_group",
+      "label": "Network Policy Group",
+      "description": "Group policy consumed by Active Directory services."
+    },
+    {
+      "name": "cmdb_ci_network_template",
+      "label": "Network Template",
+      "description": "OpenStack file used to configure a network."
+    },
+    {
+      "name": "cmdb_ci_nic",
+      "label": "Cloud Mgmt Network Interface",
+      "description": "Virtual network adapter."
+    },
+    {
+      "name": "cmdb_ci_nginx_web_server",
+      "label": "Nginx Web Server",
+      "description": "Server running Nginx software."
+    },
+    {
+      "name": "cmdb_ci_openstack_datacenter",
+      "label": "OpenStack Datacenter",
+      "description": "OpenStack logical datacenter."
+    },
+    {
+      "name": "cmdb_ci_optical_transport  (Installed with the com.snc.cmdb.telecom.category\n plugin)",
+      "label": "Fiber Optic Equipment",
+      "description": "Fiber optics which are used for long-distance and high-performance data networking. Fiber optics are commonly used in telecommunication services such as internet, television, and telephones.  Child class of Transport Hardware and parent class for telecom fiber optic\n equipment such as optical multiplexers and terminal equipment."
+    },
+    {
+      "name": "cmdb_ci_oslv_container",
+      "label": "Operating-system-level Virtualization Container",
+      "description": "Containers (a runtime instance of a docker image)."
+    },
+    {
+      "name": "cmdb_ci_oslv_engine",
+      "label": "Operating-system-level Virtualization Engine",
+      "description": "Software for running and managing containers."
+    },
+    {
+      "name": "cmdb_ci_oslv_image",
+      "label": "Operating-system-level Virtualization Image",
+      "description": "Container images. Ordered collection of root filesystem changes and the\n corresponding execution parameters for use within a container runtime."
+    },
+    {
+      "name": "cmdb_ci_oslv_image_tag",
+      "label": "Operating-system-level Virtualization Image Tag",
+      "description": "Container tag, which is a label applied to a container image in a\n repository."
+    },
+    {
+      "name": "cmdb_ci_oslv_local_image",
+      "label": "Operating-system-level Virtualization Local Image",
+      "description": "Locally managed container image."
+    },
+    {
+      "name": "cmdb_ci_osx_server",
+      "label": "OS/X Server",
+      "description": "Server running OS/X operating system."
+    },
+    {
+      "name": "cmdb_ci_os_template",
+      "label": "Image",
+      "description": "Software files used to create a new instance of a compute resource such as\n server, desktop, virtual machine, and virtual router."
+    },
+    {
+      "name": "cmdb_ci_outofband_device",
+      "label": "Out-of-Band Device",
+      "description": "Hardware used to perform out-of-band management."
+    },
+    {
+      "name": "cmdb_ci_patches",
+      "label": "Patch",
+      "description": "Patch software to fix or improve a computer program or its supporting\n data."
+    },
+    {
+      "name": "cmdb_ci_pc_hardware",
+      "label": "Personal Computer",
+      "description": "Multi-purpose electronic computer whose size, capabilities, and price make it\n feasible for individual use."
+    },
+    {
+      "name": "cmdb_ci_pcf_component",
+      "label": "CloudFoundry Component",
+      "description": "Cloud Foundry provides a highly efficient, modern model for cloud native\n application delivery on top of Kubernetes. Component represents application,\n domain, organization, quota, routes, service, service plan, space, and space\n instances.  Parent class for price base of cloud products such as virtual machines."
+    },
+    {
+      "name": "cmdb_ci_pdu",
+      "label": "PDU",
+      "description": "Power distribution unit (PDU)."
+    },
+    {
+      "name": "cmdb_ci_pdu_outlet",
+      "label": "Outlet",
+      "description": "Single outlet of a PDU."
+    },
+    {
+      "name": "cmdb_ci_peripheral",
+      "label": "Computer Peripheral",
+      "description": "Various computer peripherals such as monitor, docking station, KVM switch,\n projector, scanner, keyboard, mouse, and UPS."
+    },
+    {
+      "name": "cmdb_ci_personal_printer",
+      "label": "Personal Printer",
+      "description": "Printer whose size,capabilities and price make it feasible for individual\n use."
+    },
+    {
+      "name": "cmdb_ci_plotter",
+      "label": "Plotter",
+      "description": "Printer with capabilities to print large vector graphic images."
+    },
+    {
+      "name": "cmdb_ci_power_eq",
+      "label": "Power Equipment",
+      "description": "Hardware used to manage electrical power."
+    },
+    {
+      "name": "cmdb_ci_port",
+      "label": "Port",
+      "description": "Interface between a computer and other electronic devices."
+    },
+    {
+      "name": "cmdb_ci_port_group",
+      "label": "Port Group",
+      "description": "Group of ports on a virtual switch."
+    },
+    {
+      "name": "cmdb_ci_print_queue",
+      "label": "Puppet Primary",
+      "description": "Print queue, which is a list of printer output jobs held in a reserved memory\n area, including the most current status of all active and pending print\n jobs."
+    },
+    {
+      "name": "cmdb_ci_printer",
+      "label": "Printer",
+      "description": "Physical device which makes a persistent human-readable representation of\n graphics or text on paper or similar physical media."
+    },
+    {
+      "name": "cmdb_ci_printing_hardware",
+      "label": "Printing Hardware",
+      "description": "Physical device which makes a persistent human-readable representation of\n graphics or text on paper or similar physical media."
+    },
+    {
+      "name": "cmdb_ci_puppet_master",
+      "label": "nan",
+      "description": "Server running PuppetMaster application."
+    },
+    {
+      "name": "cmdb_ci_qtree",
+      "label": "Qtree",
+      "description": "Qtree file system."
+    },
+    {
+      "name": "cmdb_ci_qualifier",
+      "label": "Qualifier",
+      "description": "Relation qualifier CIs which contain important information about CI\n relationships.  In a relation qualifier, you can annotate arbitrary unique information about the\n relationship between two CIs. You can define multiple qualifiers for a single\n relationship, resulting in a qualifier chain. However, there can be only a single\n qualifier chain for a specific relationship type between two CIs.  Parent class for the various relation qualifier types such as EntryPoint Markers\n and Boundary Connections."
+    },
+    {
+      "name": "cmdb_ci_rack",
+      "label": "Rack",
+      "description": "Datacenter racks containing details such as rack units, rack units in use, and\n power consumption."
+    },
+    {
+      "name": "cmdb_ci_raid",
+      "label": "RAID",
+      "description": "Storage pool using RAID mechanisms to ensure data integrity."
+    },
+    {
+      "name": "cmdb_ci_raid_member",
+      "label": "RAID Member",
+      "description": "Member of storage pool using RAID mechanisms."
+    },
+    {
+      "name": "cmdb_ci_resource_group",
+      "label": "Resource Group",
+      "description": "Resource pool is a logical abstraction for flexible management of\n resources."
+    },
+    {
+      "name": "cmdb_ci_sa_scaling_pol_base",
+      "label": "Scaling Policy",
+      "description": "Parent class for virtual machines scaling policy options such as simple and\n dynamic."
+    },
+    {
+      "name": "cmdb_ci_san",
+      "label": "Storage Area Network",
+      "description": "Network which provides access to block level storage."
+    },
+    {
+      "name": "cmdb_ci_san_connection",
+      "label": "SAN Connection",
+      "description": "Connection in a SAN network."
+    },
+    {
+      "name": "cmdb_ci_san_disk",
+      "label": "SAN Disk",
+      "description": "Base table for the iSCSI Disk [cmdb_ci_iscsi_disk] and the Fibre Channel Disk\n [cmdb_ci_fc_disk] tables."
+    },
+    {
+      "name": "cmdb_ci_san_endpoint",
+      "label": "SAN Endpoint",
+      "description": "One end of a SAN connection."
+    },
+    {
+      "name": "cmdb_ci_san_export",
+      "label": "SAN Export",
+      "description": "Base table for the iSCSI Export [cmdb_ci_iscsi_export] and the Fibre Channel\n Export [cmdb_ci_fc_export] tables."
+    },
+    {
+      "name": "cmdb_ci_san_fabric",
+      "label": "SAN Fabric",
+      "description": "Hardware that connects workstations and servers to storage devices in a SAN.\n Referred to as a \"fabric.\""
+    },
+    {
+      "name": "cmdb_ci_san_zone",
+      "label": "SAN Zone",
+      "description": "Subset of SAN storage that certain users are restricted to."
+    },
+    {
+      "name": "cmdb_ci_san_zone_alias",
+      "label": "SAN Zone Alias",
+      "description": "Collection of SAN zone members."
+    },
+    {
+      "name": "cmdb_ci_san_zone_alias_member",
+      "label": "SAN Zone Alias Member",
+      "description": "M2m relationship between SAN zone aliases and SAN zone members."
+    },
+    {
+      "name": "cmdb_ci_san_zone_member",
+      "label": "SAN Zone Member",
+      "description": "Ports and devices in a SAN zone."
+    },
+    {
+      "name": "cmdb_ci_san_zone_set",
+      "label": "SAN Zone Set",
+      "description": "Collection of SAN zones."
+    },
+    {
+      "name": "cmdb_ci_scanner",
+      "label": "Scanner",
+      "description": "Hardware used to create digital imagine of paper documents."
+    },
+    {
+      "name": "cmdb_ci_server",
+      "label": "Server",
+      "description": "Base class for all types of servers."
+    },
+    {
+      "name": "cmdb_ci_server_snapshot",
+      "label": "Server Snapshot",
+      "description": "Server snapshot, which is the state of a system at a particular point in\n time."
+    },
+    {
+      "name": "cmdb_ci_service",
+      "label": "Service",
+      "description": "IT Service that directly supports a Business Process (ITIL)."
+    },
+    {
+      "name": "cmdb_ci_service_auto",
+      "label": "Service Instance",
+      "description": "Services that can be monitored by the system, which in the base system, includes only application services. If Service Mapping is activated, there can also be records for dynamic CI groups. If Event Management is activated, there can be records for alert groups."
+    },
+    {
+      "name": "cmdb_ci_service_business",
+      "label": "Business Service",
+      "description": "Business services are published to business users and typically underpin one or\n more business capabilities. Business services are often orderable by business\n users."
+    },
+    {
+      "name": "cmdb_ci_service_discovered",
+      "label": "Mapped Application Service",
+      "description": "Application services, created by the Manual service population method. For each\n application service, there is a container CI record that models the application\n service."
+    },
+    {
+      "name": "cmdb_ci_service_technical",
+      "label": "Technology Management Service (formerly Technical Service)",
+      "description": "Technology management services are published to service owners and typically underpin one or more business services. A technology management service may have an operational view made up of one or more technical\n management offerings."
+    },
+    {
+      "name": "cmdb_ci_solaris_instance",
+      "label": "Solaris Virtual Machine Instance",
+      "description": "Virtual machine instance running Solaris software."
+    },
+    {
+      "name": "cmdb_ci_solaris_server",
+      "label": "Solaris Server",
+      "description": "Physical server running Solaris software."
+    },
+    {
+      "name": "cmdb_ci_spkg",
+      "label": "Software",
+      "description": "Software package information containing details such as version, install count,\n license count, package name, and key (when SAM enabled)."
+    },
+    {
+      "name": "cmdb_ci_storage_controller",
+      "label": "Storage Controller",
+      "description": "Logical device that controls a storage volume or Fibre Channel port."
+    },
+    {
+      "name": "cmdb_ci_storage_device",
+      "label": "Storage Device",
+      "description": "Base table for block storage devices such as DAS, SAN, and NAS."
+    },
+    {
+      "name": "cmdb_ci_storage_disk",
+      "label": "Storage Disk",
+      "description": "Disk installed in a storage server."
+    },
+    {
+      "name": "cmdb_ci_storage_export",
+      "label": "Storage Export",
+      "description": "Base table for the SAN Export [cmdb_ci_san_export] table."
+    },
+    {
+      "name": "cmdb_ci_storage_fileshare",
+      "label": "Storage File Share",
+      "description": "NAS file system on a storage server (an exported file system)."
+    },
+    {
+      "name": "cmdb_ci_storage_hba",
+      "label": "Storage HBA",
+      "description": "Host bust adapter for Fibre Channel. The physical device that provides Fibre\n Channel ports."
+    },
+    {
+      "name": "cmdb_ci_storage_pool",
+      "label": "Storage Pool",
+      "description": "Logical collection of storage."
+    },
+    {
+      "name": "cmdb_ci_storage_pool_member",
+      "label": "Storage Pool Member",
+      "description": "Logical volume in a storage pool."
+    },
+    {
+      "name": "cmdb_ci_storage_switch",
+      "label": "Storage Switch",
+      "description": "Fibre Channel switch."
+    },
+    {
+      "name": "cmdb_ci_storage_volume",
+      "label": "Storage Volume",
+      "description": "Volume on a storage server."
+    },
+    {
+      "name": "cmdb_ci_storage_vol_snapshot",
+      "label": "Storage Volume Snapshot",
+      "description": "Server snapshot is the state of a system at a particular point in time."
+    },
+    {
+      "name": "cmdb_ci_subnet",
+      "label": "Cloud Mgmt Subnet",
+      "description": "Part of a larger network."
+    },
+    {
+      "name": "cmdb_ci_sun_dir_proxy_server",
+      "label": "Sun Directory Proxy Server",
+      "description": "Server running Sun ONE Directory Proxy Server software."
+    },
+    {
+      "name": "cmdb_ci_sun_ldap_dir_server",
+      "label": "Sun LDAP Server",
+      "description": "Server running Sun ONE Directory Server (LDAP) software."
+    },
+    {
+      "name": "cmdb_ci_surge_power_eq",
+      "label": "Surger Protection Equipment",
+      "description": "Power equipment used to prevent power surges."
+    },
+    {
+      "name": "cmdb_ci_tape_server",
+      "label": "Server Tape Unit",
+      "description": "Hardware for using magnetic tape storage."
+    },
+    {
+      "name": "cmdb_ci_tomcat_connector",
+      "label": "Tomcat Connector",
+      "description": "Software which provides web server plugins to connect web servers with Tomcat\n and other backends."
+    },
+    {
+      "name": "cmdb_ci_tower_eq",
+      "label": "Tower Equipment",
+      "description": "Parent class for facility towers and tower equipment such as lights and\n beacons."
+    },
+    {
+      "name": "cmdb_ci_translation_rule",
+      "label": "NAT",
+      "description": "Rules to allow router to remap one network address to another."
+    },
+    {
+      "name": "cmdb_ci_transport_hardware",
+      "label": "Transport Hardware",
+      "description": "Telecommunication hardware used for digital communication and related hardware\n such as telecommunication racks, servers to connect port to LAN, relays, channel\n banks, and network circuit switch.  Parent class for telecom transport hardware such as multiplexers and fiber optic\n equipment."
+    },
+    {
+      "name": "cmdb_ci_ucs_blade",
+      "label": "Cisco UCS Blade",
+      "description": "Physical Cisco UCS Blade server hardware."
+    },
+    {
+      "name": "cmdb_ci_ucs_chassis",
+      "label": "Cisco UCS Chassis",
+      "description": "Physical Cisco UCS chassis hardware used to hold Cisco UCS Blade server\n hardware."
+    },
+    {
+      "name": "cmdb_ci_ucs_equipment",
+      "label": "Cisco UCS Equipment",
+      "description": "Cisco Unified Computing System (UCS) products."
+    },
+    {
+      "name": "cmdb_ci_unix_cluster",
+      "label": "UNIX Cluster",
+      "description": "Set of computers clustered together to present a single Unix server\n resource."
+    },
+    {
+      "name": "cmdb_ci_unix_daemon",
+      "label": "UNIX Daemon",
+      "description": "Long running Unix background process used to answer requests for\n services."
+    },
+    {
+      "name": "cmdb_ci_unix_server",
+      "label": "UNIX Server",
+      "description": "Server running Unix software."
+    },
+    {
+      "name": "cmdb_ci_ups",
+      "label": "UPS",
+      "description": "Uninterrupted Power Supply devices, where devices are traditional UPS\n devices."
+    },
+    {
+      "name": "cmdb_ci_ups_alarm",
+      "label": "UPS Alarm",
+      "description": "Uninterrupted Power Supply alarm."
+    },
+    {
+      "name": "cmdb_ci_ups_bypass",
+      "label": "UPS Bypass",
+      "description": "Uninterrupted Power Supply bypass."
+    },
+    {
+      "name": "cmdb_ci_ups_input",
+      "label": "UPS Input",
+      "description": "Electrical input to an Uninterrupted Power Supply device."
+    },
+    {
+      "name": "cmdb_ci_ups_output",
+      "label": "UPS Output",
+      "description": "Electrical output from an Uninterrupted Power Supply device."
+    },
+    {
+      "name": "cmdb_ci_ups_power_eq",
+      "label": "Uninterruptible Power Supply",
+      "description": "Uninterrupted Power Supply devices, where devices are any non-traditional UPS\n devices that manage electrical power."
+    },
+    {
+      "name": "cmdb_ci_vcenter",
+      "label": "VMware vCenter Instance",
+      "description": "Installed instance of VMware VCenter software."
+    },
+    {
+      "name": "cmdb_ci_vcenter_cluster",
+      "label": "VMware vCenter Cluster",
+      "description": "Set of servers that work together while running VMware VCenter\n software."
+    },
+    {
+      "name": "cmdb_ci_vcenter_cluster_drs_rule",
+      "label": "VMWare vCenter Cluster DRS Rule",
+      "description": "vCenter specific table which stores Distributed Resource Scheduler (DRS) basic\n rule information. Stores the affinity rule specifying that the members of a\n selected virtual machine DRS group can or must run on the members of a specific\n host DRS group.  Populated by the [vCenter API ClusterRuleInfo(vim.cluster.RuleInfo)](https://code.vmware.com/apis/196/vsphere#/doc/vim.cluster.RuleInfo.html) ."
+    },
+    {
+      "name": "cmdb_ci_vcenter_datacenter",
+      "label": "VMware vCenter Datacenter",
+      "description": "VMware VCenter data center objects."
+    },
+    {
+      "name": "cmdb_ci_vcenter_datastore",
+      "label": "VMware vCenter Datastore",
+      "description": "VMware VCenter datastore objects containing details such as capacity,\n freespace, filesystem, and type."
+    },
+    {
+      "name": "cmdb_ci_vcenter_datastore_disk",
+      "label": "Datastore Disk",
+      "description": "Individual VMware VCenter datastore disk."
+    },
+    {
+      "name": "cmdb_ci_vcenter_folder",
+      "label": "VMware vCenter Folder",
+      "description": "VCenter folders, which can be used to group objects of the same type for easier\n management."
+    },
+    {
+      "name": "cmdb_ci_vcenter_network",
+      "label": "VMware vCenter Network",
+      "description": "VMWare vCenter virtual network."
+    },
+    {
+      "name": "cmdb_ci_vcenter_object",
+      "label": "VMware vCenter Object",
+      "description": "Base class for most VMware VCenter objects."
+    },
+    {
+      "name": "cmdb_ci_vcenter_server_obj",
+      "label": "VMware vCenter Server Object",
+      "description": "VMware hypervisor."
+    },
+    {
+      "name": "cmdb_ci_veritas_disk",
+      "label": "Veritas Disk",
+      "description": "Physical disk that is controlled by Veritas Volume Manager."
+    },
+    {
+      "name": "cmdb_ci_veritas_disk_group",
+      "label": "Veritas Disk Group",
+      "description": "Collection of disks in Veritas Volume Manager."
+    },
+    {
+      "name": "cmdb_ci_veritas_plex",
+      "label": "Veritas Plex",
+      "description": "Logical partition in Veritas Volume Manager."
+    },
+    {
+      "name": "cmdb_ci_veritas_subdisk",
+      "label": "Veritas Subdisk",
+      "description": "Partition of a Veritas_disk."
+    },
+    {
+      "name": "cmdb_ci_veritas_volume",
+      "label": "Veritas Volume",
+      "description": "Aggregation of plexes."
+    },
+    {
+      "name": "cmdb_ci_virtualization_server",
+      "label": "Virtualization Server",
+      "description": "Base table used by the ESX Server [cmdb_ci_esx_server] table."
+    },
+    {
+      "name": "cmdb_ci_virtual_desktop",
+      "label": "Virtual Desktop",
+      "description": "User's desktop environment (such as icons, wallpaper, windows, folders,\n toolbars, and widgets) is stored remotely on a server."
+    },
+    {
+      "name": "cmdb_ci_virtual_pvt_gateway",
+      "label": "Virtual Private Gateway",
+      "description": "Two VPN endpoints for automatic failover."
+    },
+    {
+      "name": "cmdb_ci_vm",
+      "label": "Virtual Machine HyperVisor",
+      "description": "Hypevisor software."
+    },
+    {
+      "name": "cmdb_ci_vm_instance",
+      "label": "Virtual Machine Instance",
+      "description": "Generic virtual machines information."
+    },
+    {
+      "name": "cmdb_ci_vm_object",
+      "label": "Virtual Machine Object",
+      "description": "Base class for all VM objects. Parent for all objects such as Hyper-V object\n and KVM object."
+    },
+    {
+      "name": "cmdb_ci_vm_parallels",
+      "label": "Parallels",
+      "description": "Instance of Parallels software."
+    },
+    {
+      "name": "cmdb_ci_vm_template",
+      "label": "Virtual Machine Template",
+      "description": "Template, which is a main copy of a virtual machine that can be used to create many clones. Base table for all VM templates."
+    },
+    {
+      "name": "cmdb_ci_vm_user_credentials",
+      "label": "VM User Credentials",
+      "description": "Credentials, which are used to authenticate access rights and\n permissions."
+    },
+    {
+      "name": "cmdb_ci_vm_vmware",
+      "label": "VMware",
+      "description": "Note: No longer used. VMWare specialization of the Virtual Machine table."
+    },
+    {
+      "name": "cmdb_ci_vm_zones",
+      "label": "Zones",
+      "description": "Partitioned virtual OS environment working in a Solaris operating system\n space."
+    },
+    {
+      "name": "cmdb_ci_voice_hardware  (Installed with the com.snc.cmdb.telecom.category\n plugin)",
+      "label": "Voice System Hardware",
+      "description": "Telecommunication systems that represent telephone systems, telephone exchanges,\n and voice mail.  Parent class for telecom voice system hardware such as voicemail and private\n branch exchanges."
+    },
+    {
+      "name": "cmdb_ci_volume_template",
+      "label": "Volume Template",
+      "description": "Set of rules that specify one or more capabilities of a storage volume (storage\n selection and layout rules)."
+    },
+    {
+      "name": "cmdb_ci_vmware_instance",
+      "label": "VMware Virtual Machine Instance",
+      "description": "VMware VM instance on VMware hypervisor."
+    },
+    {
+      "name": "cmdb_ci_vmware_template",
+      "label": "VMware Virtual Machine Template",
+      "description": "Main copy of a VMware virtual machine that can be used to create many clones."
+    },
+    {
+      "name": "cmdb_ci_vpc",
+      "label": "Virtual Private Cloud",
+      "description": "On-demand configurable pool of shared computing resources allocated within a\n public cloud environment."
+    },
+    {
+      "name": "cmdb_ci_vpn",
+      "label": "Virtual Private Network",
+      "description": "Private network configured to run across a public network."
+    },
+    {
+      "name": "cmdb_ci_vpn_connection",
+      "label": "VPN Connection",
+      "description": "Secure connection to another network over the Internet."
+    },
+    {
+      "name": "cmdb_ci_vserver_peer",
+      "label": "Vserver Peer",
+      "description": "Extends the Virtual Machine Object [cmdb_ci_vm_object] table. Peer relationship\n between the Vservers (NetApp)."
+    },
+    {
+      "name": "cmdb_ci_wap_network",
+      "label": "Wireless Access Point",
+      "description": "Networking hardware device that allows a Wi-Fi compliant device to connect to a\n wired network."
+    },
+    {
+      "name": "cmdb_ci_web_application",
+      "label": "Web Application",
+      "description": "Client–server software application in which the client (or user interface) runs\n in a web browser."
+    },
+    {
+      "name": "cmdb_ci_web_domino",
+      "label": "Lotus Domino HTTP Server",
+      "description": "Server running IBM Notes software (formerly Lotus Notes/IBM Domino)."
+    },
+    {
+      "name": "cmdb_ci_web_server",
+      "label": "Web Server",
+      "description": "Computer system that processes requests via HTTP from the World Wide\n Web."
+    },
+    {
+      "name": "cmdb_ci_web_service",
+      "label": "Web Service",
+      "description": "Service offered by an electronic device to another electronic device,\n communicating with each other via the World Wide Web."
+    },
+    {
+      "name": "cmdb_ci_web_site",
+      "label": "Web Site",
+      "description": "A collection of related web pages."
+    },
+    {
+      "name": "cmdb_ci_websphere_cell",
+      "label": "Websphere Cell",
+      "description": "A logical grouping of IBM Websphere nodes (each of which runs one or more\n application servers) that are centrally managed."
+    },
+    {
+      "name": "cmdb_ci_win_cluster",
+      "label": "Windows Cluster",
+      "description": "A single (virtual) server composed of one or more physical Windows Servers."
+    },
+    {
+      "name": "cmdb_ci_win_cluster_node",
+      "label": "Windows Cluster Node",
+      "description": "A physical member of the Windows Cluster application."
+    },
+    {
+      "name": "cmdb_ci_win_cluster_resource",
+      "label": "Windows Cluster Resource",
+      "description": "A logical or physical entity managed by the Windows Cluster\n application."
+    },
+    {
+      "name": "cmdb_ci_win_domain_controller",
+      "label": "Windows Domain Controller",
+      "description": "A server that responds to security authentication requests within a Windows\n Server domain."
+    },
+    {
+      "name": "cmdb_ci_win_server",
+      "label": "Windows Server",
+      "description": "A server running Microsoft Windows Server operating system."
+    },
+    {
+      "name": "cmdb_ci_windows_service",
+      "label": "Windows Service",
+      "description": "A Windows computer program that operates in the background."
+    },
+    {
+      "name": "cmdb_ci_zone",
+      "label": "Data Center Zone",
+      "description": "A specified portion of a data center facility."
+    }
+  ]
+}
