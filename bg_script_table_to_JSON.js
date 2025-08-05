@@ -1,5 +1,5 @@
 (function() {
-    var tableName = "cmdb_ci_business_app"; // change this to your table
+    var tableName = "table_name"; // change this to your table
     var result = {
         name: tableName,
         label: new GlideRecord('sys_db_object').get('name', tableName) ? GlideRecord('sys_db_object').label.toString() : "",
@@ -48,3 +48,4 @@
 
     gs.info(JSON.stringify(result, null, 2));
 })();
+
