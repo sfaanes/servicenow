@@ -27,6 +27,9 @@ Contains detailed information about certain CMDB tables and their use, fields, f
 Contains high-level overview and descriptions of ALL ServiceNow CMDB tables
 Note: This is a work in progress and will be added soon.
 
+### 5 - CSDM 5.0
+Nice to reference when working with CMDB and following the CSDM Framework
+
 ## Creating Guide Files
 When creating JSON files for a new process area, also create a guide file (.md format) that documents the related JSON files and how they are used.
 Example: CMDB_guide.md
