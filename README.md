@@ -25,6 +25,7 @@ Contains detailed information about certain CMDB tables and their use, fields, f
 
 ### 4 - cmdb_tables
 Contains high-level overview and descriptions of ALL ServiceNow CMDB tables
+Note: This is a work in progress and will be added soon.
 
 ## Creating Guide Files
 When creating JSON files for a new process area, also create a guide file (.md format) that documents the related JSON files and how they are used.
