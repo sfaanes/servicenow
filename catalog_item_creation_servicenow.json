@@ -1,0 +1,235 @@
+{
+  "version": "Yokohama",
+  "description": "Schema reference for creating ServiceNow catalog items and variables used by GPT. Used to give correct responses about what a catalog item and other relevant SN items should contain.",
+  "catalog_item": {
+    "table": "sc_cat_item",
+    "description": "Main table for Service Catalog Items.",
+    "fields": {
+      "name": { "type": "translated_text", "required": true },
+      "short_description": { "type": "translated_text", "required": true },
+      "description": { "type": "translated_html", "required": false },
+      "request_method": {
+        "type": "choice",
+        "choices": ["", "submit", "request"],
+        "default": "",
+        "description": "Defines how the item is processed: Order, Submit (default), or Request."
+      },
+      "catalog": {
+        "type": "reference",
+        "reference_to": "sc_catalog",
+        "required": true,
+        "description": "Catalog this item belongs to (e.g., Service Catalog)"
+      },
+      "category": {
+        "type": "reference",
+        "reference_to": "sc_category",
+        "required": true,
+        "description": "Category inside the selected catalog (e.g., 'HR Requests')"
+      },
+      "topic": {
+        "type": "reference",
+        "reference_to": "taxonomy_topic",
+        "description": "Optional topic tag if taxonomy topics are enabled"
+      },
+      "flow_designer_flow": { "type": "reference", "reference_to": "sys_hub_flow", "required": false },
+      "active": { "type": "boolean", "default": true },
+      "no_cart": { "type": "boolean" },
+      "no_order": { "type": "boolean" },
+      "no_wishlist_v2": { "type": "boolean" },
+      "mandatory_attachment": { "type": "boolean" },
+      "price": { "type": "price" },
+      "recurring_price": { "type": "price" },
+      "recurring_frequency": {
+        "type": "choice",
+        "choices": ["monthly", "quarterly", "annually"]
+      },
+      "delivery_time": { "type": "glide_duration" },
+      "owner": {
+        "type": "reference",
+        "reference_to": "sys_user",
+        "description": "Set to the user responsible for the item"
+      },
+      "icon": { "type": "user_image" },
+      "state": { "type": "string", "choices": ["draft", "published", "retired"] },
+      "visible_bundle": { "type": "boolean" },
+      "visible_guide": { "type": "boolean" },
+      "visible_standalone": { "type": "boolean" },
+      "template": { "type": "reference", "reference_to": "sc_template" },
+      "roles": { "type": "user_roles" }
+    }
+  },
+
+  "variables": {
+    "table": "item_option_new",
+    "description": "Defines variables used on Service Catalog Items.",
+    "shared_fields": {
+      "name": { "type": "string", "description": "Internal name used in scripts" },
+      "question_text": { "type": "string", "description": "Label shown on the form" },
+      "type": {
+        "type": "choice",
+        "description": "Specifies the variable type for catalog item variables.",
+        "choices": {
+          "1": "Yes / No",
+          "2": "Multi Line Text",
+          "3": "Multiple Choice",
+          "4": "Numeric Scale",
+          "5": "Select Box",
+          "6": "Single Line Text",
+          "7": "CheckBox",
+          "8": "Reference",
+          "9": "Date",
+          "10": "Date/Time",
+          "11": "Label",
+          "12": "Break",
+          "14": "Custom",
+          "15": "UI Page",
+          "16": "Wide Single Line Text",
+          "17": "Custom with Label",
+          "18": "Lookup Select Box",
+          "19": "Container Start",
+          "20": "Container End",
+          "21": "List Collector",
+          "22": "Lookup Multiple Choice",
+          "23": "HTML",
+          "24": "Container Split",
+          "25": "Masked",
+          "26": "Email",
+          "27": "URL",
+          "28": "IP Address",
+          "29": "Duration",
+          "31": "Requested For",
+          "32": "Rich Text Label",
+          "33": "Attachment",
+          "40": "Table Name"
+        },
+        "notes": [
+          "'macro' and 'macro_with_label' are deprecated. Use 'custom' instead for widget embedding."
+        ]
+      },
+      "mandatory": { "type": "boolean" },
+      "default_value": { "type": "string" },
+      "help_text": { "type": "string" },
+      "order": { "type": "integer", "description": "Determines display order of variables" },
+      "visible": {
+        "type": "boolean",
+        "default": true,
+        "description": "Whether the variable is shown on the form (hidden = false)"
+      },
+      "read_only": {
+        "type": "boolean",
+        "default": false,
+        "description": "If true, value is locked for editing in the UI"
+      },
+      "reference": {
+        "type": "string",
+        "description": "Target table name if type is 'Reference' (e.g., 'sys_user')"
+      },
+      "catalog_item": {
+        "type": "reference",
+        "reference_to": "sc_cat_item",
+        "description": "Links the variable to a specific catalog item."
+      },
+      "variable_set": {
+        "type": "reference",
+        "reference_to": "item_option_new_set",
+        "description": "Optional grouping of variables into reusable sets."
+      }
+    },
+    "conditional_fields": {
+      "choices": {
+        "type": "array",
+        "description": "Only used for Select Box (5) or Multiple Choice (3).",
+        "items": {
+          "type": "object",
+          "properties": {
+            "label": { "type": "string" },
+            "value": { "type": "string" }
+          }
+        }
+      },
+      "layout": {
+        "type": "string",
+        "description": "Only for type 19 (Container Start). Defines layout of fields inside container.",
+        "enum": [
+          "1 Column wide",
+          "2across",
+          "2down"
+        ]
+      },
+      "rich_text": {
+        "type": "translated_html",
+        "description": "For Rich Text Label (type 32). Displayed as formatted content."
+      },
+      "list_table": {
+        "type": "string",
+        "description": "Required for List Collector (type 21). Specifies the target table (e.g., sys_user)."
+      }
+    }
+  },
+
+
+  "flow": {
+    "table": "sys_hub_flow",
+    "description": "Defines a Flow Designer flow that automates actions for the catalog item.",
+    "fields": {
+      "name": {
+        "type": "string",
+        "required": true,
+        "description": "Name of the flow as it will appear in Flow Designer."
+      },
+      "description": {
+        "type": "string",
+        "required": false,
+        "description": "Optional description of the flow."
+      },
+      "table": {
+        "type": "reference",
+        "reference_to": "sys_db_object",
+        "default": "sc_req_item",
+        "description": "Table that triggers the flow, typically 'sc_req_item' for catalog items."
+      },
+      "active": {
+        "type": "boolean",
+        "default": false,
+        "description": "Whether the flow is active."
+      },
+      "trigger_type": {
+        "type": "choice",
+        "choices": ["record", "scheduled", "event", "script"],
+        "default": "record",
+        "description": "Type of trigger to start the flow."
+      },
+      "steps": {
+        "type": "array",
+        "description": "Steps to execute in the flow.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "action_type": {
+              "type": "choice",
+              "choices": ["approval", "script", "subflow", "notification", "condition", "log"],
+              "required": true
+            },
+            "order": {
+              "type": "integer",
+              "description": "Execution order of the step."
+            },
+            "description": {
+              "type": "string",
+              "required": false
+            },
+            "condition": {
+              "type": "string",
+              "required": false,
+              "description": "Condition to run this step (e.g., 'current.cost > 1000')."
+            },
+            "inputs": {
+              "type": "object",
+              "description": "Inputs required by the step type (e.g., approver, message, subflow name)."
+            }
+          }
+        }
+      }
+    }
+  }
+}
