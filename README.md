@@ -19,6 +19,7 @@ When run, it outputs a detailed JSON object describing all fields in a specified
 ### 2 - catalog_item_creation_servicenow
 Contains correct information about fields, field-values, and field-types for creating and managing catalog items
 
+Note that some preferences may have been set by me. Check the JSON file to verify it will suggest according to your policy and procedures.
 ### 3 - cmdb_core_tables
 Contains detailed information about certain CMDB tables and their use, fields, field choices, configurations, integrations, field-mappings, and correct usage
 
